@@ -92,9 +92,15 @@ public class Main {
                                         person.move(x, y);
                                     } else {
                                         person.minusLive();
-                                    }
-                                    break;
-                                }}
+                                    }}}
+//                            int strong = r.nextInt(3);
+//                            if (strong == 1 || strong == 2) {
+//                                monsterBang(person.getX(), person.getY(), monsters, person.move(x, y), person.minusLive(), board, difficultGame);
+//                                    break;
+//                                } else {
+//                                monsterBang(person.getX(), person.getY(),monsters, person.move(x, y), person.minusLive(), board, difficultGame);
+//                                monsterBang(person.getX(), person.getY(),monsters, person.move(x, y), person.minusLive(), board, difficultGame);
+//                            }
                         }
                     } else {
                         System.out.println("Неккоректный ход");
@@ -130,5 +136,24 @@ public class Main {
         System.out.println(wall);
         System.out.println("Количество жизней:\t" + lives + "\n");
     }
+
+
+//    static void monsterBang(int x, int y, Monster[] monsters, Person person, String[][] board, int difficultGame) {
+//
+//        for (Monster monster : monsters) {
+//            if (monster.conflictPerson(x, y)) {
+//                if (monster.taskMonster(difficultGame)) {
+//                    board[person.getY() - 1][person.getX() - 1] = "  ";
+//                    person.move(x, y);
+//                } else {
+//                    person.minusLive();
+//                }
+//
+//            }
+//        }
+//    }
+
+
+
 
 }

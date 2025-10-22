@@ -37,13 +37,7 @@ public class Person {
     void minusLive() {
         live -=1;
     }
-    void downLive() {
-        if (live < 0) {
-            live = 0;
-        }else{
-            live-=1;
-        }
-    }
+
     public boolean moveCorrect(int x, int y) {
         return this.x == x && Math.abs(this.y - y) == 1 || this.y == y && Math.abs(this.x - x) == 1;
     }

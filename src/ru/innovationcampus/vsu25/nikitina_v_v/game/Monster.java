@@ -25,12 +25,13 @@ public class Monster {
         this.x = r.nextInt(sizeBoard - 1);
         this.y = r.nextInt(sizeBoard);
     }
+    //если мне расскажут как сделать вероятность, я сделаю так чтобы при небольшом шансе у монстра был тотем возрождения. Типо его надо победить 2 раза
     public boolean conflictPerson(int perX, int perY){
-        return perY - 1 == this.y && perX - 1 == this.x;
+        return perY - 1 == this.y && perX -1 == this.x;
     }
     public boolean taskMonster(int difficultGame) {
-        int x = r.nextInt(100);
-        int y = r.nextInt(100 * (difficultGame - 1), 100 * difficultGame);
+        int x = r.nextInt(300);
+        int y = r.nextInt(100 * difficultGame);
         int trueAnswer = x + y;
         System.out.println("Реши пример: " + x + " + " + y + " = ?");
         Scanner sc = new Scanner(System.in);
